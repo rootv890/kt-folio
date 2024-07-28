@@ -1,7 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import ProjectCard from "./ProjectCard";
-import ComingSoonProjectCard from "./SoonProjectCard";
 
 const Projects = () => {
   return (
