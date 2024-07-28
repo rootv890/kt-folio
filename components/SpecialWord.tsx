@@ -12,11 +12,13 @@ const SpecialWord = ({ children, href, className }: SpecialWordProps) => {
   return (
     <span
       className={cn(
-        "text-kt hover:underline underline-offset-8 cursor-pointer font-mono",
+        "text-kt  underline-offset-8 cursor-pointer font-mono",
         className
       )}
     >
-      <Link href={href}>{children}</Link>
+      <Link className=" " href={href}>
+        {children}
+      </Link>
     </span>
   );
 };

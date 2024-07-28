@@ -9,6 +9,7 @@ import {
   ToastViewport,
 } from "@/components/ui/toast";
 import { useToast } from "@/components/ui/use-toast";
+import TypeShuffle from "@/lib/typeshuffle";
 
 export function Toaster() {
   const { toasts } = useToast();
@@ -19,7 +20,9 @@ export function Toaster() {
         return (
           <Toast key={id} {...props}>
             <div className="grid gap-1">
-              {title && <ToastTitle>{title}</ToastTitle>}
+              <TypeShuffle triggerOnce effect={"fx1"}>
+                {title && <ToastTitle>{title}</ToastTitle>}
+              </TypeShuffle>
               {description && (
                 <ToastDescription>{description}</ToastDescription>
               )}

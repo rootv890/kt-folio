@@ -15,10 +15,10 @@ const Header = () => {
           href=""
           className="ml-2 hover:text-kt-gray-100 text-kt-gray-500 text-[16px]"
         >
-          / @ash_8tty9
+          / @{process.env.NEXT_PUBLIC_username}
         </a>
       </div>
-      <KeyToggler theKey="t" />
+      {/* <KeyToggler theKey="t" /> */}
     </div>
   );
 };

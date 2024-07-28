@@ -1,3 +1,5 @@
+"use client";
+import TypeShuffle from "@/lib/typeshuffle";
 import React from "react";
 
 interface SectionTitleProps {
@@ -9,9 +11,11 @@ const SectionTitle = ({ title, id }: SectionTitleProps) => {
   return (
     <h2
       id={id && id}
-      className=" w-full select-none font-mono text-[16px] text-kt-gray-900 uppercase mt-10 mb-4"
+      className=" w-full select-none font-mono text-[16px] text-zinc-700 uppercase mt-10 mb-4"
     >
-      {title}
+      <TypeShuffle triggerOnce={false} effect="fx1">
+        {title}
+      </TypeShuffle>
     </h2>
   );
 };

@@ -92,3 +92,82 @@
     @apply text-kt  transition-all ease-in-out;
   }
 }
+
+/* Matrix Styles */
+
+@keyframes animate-matrix {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-matrix {
+  animation: animate-matrix 10s linear infinite;
+  opacity: 0.8;
+}
+
+.glitch-container {
+  width: 80%; /* Adjust width as needed */
+  margin: 20px auto; /* Center the container */
+  position: relative;
+  overflow: hidden;
+}
+
+.glitch {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  color: var(--kt-green); /* Example text color */
+  /* Terminal-like font */
+  animation: glitch-animation 7s infinite;
+  transition: opacity 1s ease-in-out; /* Smooth opacity transition */
+}
+
+.glitching .glitch {
+  opacity: 0.6; /* Reduced opacity when glitching */
+}
+
+.glitch-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above glitch effect */
+}
+
+@keyframes glitch-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-1px, -1px);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  30% {
+    transform: translate(-1px, -1px);
+  }
+  40% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  70% {
+    transform: translate(-1px, -1px);
+  }
+  80% {
+    transform: translate(1px, 1px);
+  }
+  90% {
+    transform: translate(-1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

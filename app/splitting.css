@@ -1,0 +1,9 @@
+/* Splitting CSS */
+.splitting {
+  white-space: pre-wrap;
+  display: inline-block;
+}
+
+.splitting .char {
+  display: inline-block;
+}

@@ -34,7 +34,7 @@ const KeyToggler = ({ theKey }: KeyTogglerProps) => {
     if (theme === "light") {
       setTheme("dark");
     } else {
-      setTheme("light");
+      setTheme("dark");
     }
   };
 
