@@ -29,8 +29,8 @@ const ProjectCard = ({
               <Image
                 src={image}
                 alt={name}
-                width={800}
-                height={600}
+                width={400}
+                height={300}
                 className="rounded-lg"
               />
             ) : (
@@ -39,14 +39,14 @@ const ProjectCard = ({
                 alt={name}
                 width={800}
                 height={600}
-                className="rounded-lg"
+                className="rounded-lg object-cover"
               />
             )}
-            <ul className="flex gap-1 absolute top-1 right-1">
+            {/* <ul className="flex gap-1 absolute top-1 right-1">
               {[
                 { id: 1, name: "Cyb Sec" },
                 { id: 2, name: "Hacking" },
-                { id: 3, name: "Pentes" },
+                { id: 3, name: "Pentest" },
               ].map((tag) => (
                 <span
                   className="rounded-md bg-black ease-linear transition-all  px-2  text-sm cursor-pointer  hover:text-kt border-kt-gray-500 py-px text-kt-gray-500"
@@ -55,7 +55,7 @@ const ProjectCard = ({
                   {tag.name}
                 </span>
               ))}
-            </ul>
+            </ul> */}
           </div>
         ) : (
           <span className="rounded-md bg-kt ease-linear transition-all  px-2  text-sm cursor-pointer  hover:text-kt-gray-200 border-kt-gray-500 py-px text-kt-gray-500">
@@ -76,11 +76,11 @@ const ProjectCard = ({
           </p>
 
           {/* Time */}
-          {project_ready && (
+          {/* {project_ready && (
             <p className="mt-3 text-kt-gray-200 dark:text-kt-gray-900">
               20K Views <span className="">•</span> 20 Mar 2024
             </p>
-          )}
+          )} */}
         </div>
       </Link>
     </li>

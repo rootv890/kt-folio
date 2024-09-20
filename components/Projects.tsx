@@ -13,21 +13,23 @@ const Projects = () => {
             Projects are not ready yet, but here are my upcoming projects.
           </p>
           <ProjectCard
-            name="Project Name"
-            description="Some Descritpion for one or two line!!"
-            image="/image-1.jpg"
+            name="Canva Like Clone!"
+            description="Simple online Image Editor and Graphic design tool with little bit of AI!"
+            image="/canva-clone.png"
+            // project_ready
           />
           <ProjectCard
-            name="Project Name"
-            description="Some Descritpion for one or two line!!"
-            image="/image-1.jpg"
+            name="New Portfolio 2025"
+            description="New Super cool Portfolio for 2025"
+            // image="/image-1.jpg"
+            // project_ready
           />
         </div>
       ) : (
         <ul className="grid grid-cols-1 gap-2  justify-center md:grid-cols-2">
           <ProjectCard
-            name="Project Name"
-            description="Some Descritpion for one or two line!!"
+            name="New Portfolio 2025"
+            description="New Super cool Portfolio for 2025"
             image="/image-1.jpg"
             project_ready
           />

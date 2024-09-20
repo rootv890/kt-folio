@@ -12,22 +12,25 @@ const Main = () => {
           {/* <TypeShuffle effect={effect}>
           CYBER SECURITY ANALYST FOCUSED ON NEW WEB SECURITY.
         </TypeShuffle> */}
-          CYBER SECURITY ANALYST FOCUSED ON NEW WEB SECURITY.
+          DESIGNER AND DEVELOPER
         </h2>
         {/* // TODO : 3D Component or AppleEmoji of KT */}
         <div className="mt-6 md:w-3/4 text-justify">
           <p className="text-[18px] text-kt-gray-500 dark:text-kt-gray-100 leading-relaxed">
             Hey there! I&#39;m{" "}
-            <SpecialWord href="#">Khrystyna Tvyoniuk</SpecialWord>,{" "}
+            <SpecialWord href="#">Pruthviraj Chauhan</SpecialWord>,{" "}
             <SpecialWord
               className="dark:text-white text-black hover:no-underline"
               href="#"
             >
-              Cyber Security Analyst and Threat Researcher.
+              Freelance Designer and Developer
             </SpecialWord>{" "}
-            Currently, I&#39;m on a mission to protect online businesses from
-            cyber threats at{" "}
-            <SpecialWord className="dark:text-white text-black " href="#">
+            Currently, I&#39;m on a mission to practicing creative design and
+            development{" "}
+            <SpecialWord
+              className="dark:text-white text-black "
+              href="https://x.com/rootv_890"
+            >
               Mitto Studio.
             </SpecialWord>{" "}
           </p>
